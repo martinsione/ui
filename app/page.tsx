@@ -1,5 +1,5 @@
 import { VariantProps } from "class-variance-authority";
-import { Badge, Button, ButtonProps } from "@/ui";
+import { Avatar, Badge, Button, ButtonProps } from "@/ui";
 
 const Variants = {
   color: ["primary", "secondary", "error", "warning", "alert", "violet"],
@@ -30,6 +30,14 @@ const Arrow = () => {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center gap-12 p-20">
+      <div className="flex items-center gap-8">
+        <Avatar src="https://github.com/martinsione.png" />
+        <Avatar
+          src="https://github.com/martinsione.jpeg"
+          fallback="https://github.com/martinsione.png"
+        />
+      </div>
+
       <div className="flex items-center gap-8">
         {Variants.size.map((size) => (
           <div key={size} className="flex flex-col items-center gap-2">
