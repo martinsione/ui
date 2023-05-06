@@ -1,6 +1,6 @@
 "use client";
-import { twMerge as cn } from "tailwind-merge";
 import React from "react";
+import { twMerge as cn } from "tailwind-merge";
 
 export interface AvatarProps
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, "width" | "height"> {
@@ -27,7 +27,7 @@ const Avatar = (props: AvatarProps) => {
       };
       ref.current.src = props?.src as string;
     }
-  }, [props.src, fallback, ref]);
+  }, []);
 
   return (
     <img

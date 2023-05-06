@@ -1,0 +1,40 @@
+---
+title: Avatar
+description: Avatars represent a user or a team. Stacked avatars represent a group of people.
+---
+
+## Avatar
+
+<div className="flex items-center">
+  <Avatar size={90} src="https://github.com/vercel.png" />
+  <Avatar size={60} src="https://github.com/vercel.png" />
+  <Avatar size={30} src="https://github.com/vercel.png" />
+  <Avatar size={20} src="https://github.com/vercel.png" />
+</div>
+
+---
+
+## Avatar with Fallback
+
+<div className="flex items-center">
+  <Avatar
+    size={90}
+    src="https://github.com/vercel.jpeg"
+    fallback="https://github.com/vercel.png"
+  />
+  <Avatar
+    size={60}
+    src="https://github.com/vercel.jpeg"
+    fallback="https://github.com/vercel.png"
+  />
+  <Avatar
+    size={30}
+    src="https://github.com/vercel.jpeg"
+    fallback="https://github.com/vercel.png"
+  />
+  <Avatar
+    size={20}
+    src="https://github.com/vercel.jpeg"
+    fallback="https://github.com/vercel.png"
+  />
+</div>

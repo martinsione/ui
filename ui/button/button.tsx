@@ -17,7 +17,7 @@ export interface ButtonProps
 const variants = cva(
   "relative m-0 flex max-w-full cursor-pointer select-none items-center justify-center rounded border px-3 py-0 align-baseline font-medium leading-5 outline-none transition-colors duration-150 ease-in focus:ring-offset-1 focus-visible:ring-2 disabled:cursor-not-allowed  disabled:border-geist-accents-2 disabled:bg-geist-accents-1 disabled:text-geist-accents-3",
   {
-    defaultVariants: { variant: "base", size: "sm", color: "primary" },
+    defaultVariants: { variant: "base", size: "md", color: "primary" },
     variants: {
       color: {
         primary:

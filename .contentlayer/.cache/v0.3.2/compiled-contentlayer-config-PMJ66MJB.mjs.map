@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../contentlayer.config.js"],
+  "sourcesContent": ["import { defineDocumentType, makeSource } from \"contentlayer/source-files\";\n\n/** @type {import('contentlayer/source-files').ComputedFields} */\nconst computedFields = {\n  slug: {\n    type: \"string\",\n    resolve: (doc) => doc._raw.flattenedPath,\n  },\n};\n\nexport const Page = defineDocumentType(() => ({\n  name: \"Page\",\n  filePathPattern: `**/*.mdx`,\n  contentType: \"mdx\",\n  fields: {\n    title: {\n      type: \"string\",\n      required: true,\n    },\n    description: {\n      type: \"string\",\n      required: true,\n    },\n    published: {\n      type: \"boolean\",\n      default: true,\n    },\n  },\n  computedFields,\n}));\n\nexport default makeSource({\n  contentDirPath: \"./docs\",\n  documentTypes: [Page],\n});\n"],
+  "mappings": ";AAAA,SAAS,oBAAoB,kBAAkB;AAG/C,IAAM,iBAAiB;AAAA,EACrB,MAAM;AAAA,IACJ,MAAM;AAAA,IACN,SAAS,CAAC,QAAQ,IAAI,KAAK;AAAA,EAC7B;AACF;AAEO,IAAM,OAAO,mBAAmB,OAAO;AAAA,EAC5C,MAAM;AAAA,EACN,iBAAiB;AAAA,EACjB,aAAa;AAAA,EACb,QAAQ;AAAA,IACN,OAAO;AAAA,MACL,MAAM;AAAA,MACN,UAAU;AAAA,IACZ;AAAA,IACA,aAAa;AAAA,MACX,MAAM;AAAA,MACN,UAAU;AAAA,IACZ;AAAA,IACA,WAAW;AAAA,MACT,MAAM;AAAA,MACN,SAAS;AAAA,IACX;AAAA,EACF;AAAA,EACA;AACF,EAAE;AAEF,IAAO,8BAAQ,WAAW;AAAA,EACxB,gBAAgB;AAAA,EAChB,eAAe,CAAC,IAAI;AACtB,CAAC;",
+  "names": []
+}

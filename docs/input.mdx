@@ -1,0 +1,57 @@
+---
+title: Input
+description: Retrieve text input from a user.
+---
+
+## Sizes
+
+<div className="flex items-center gap-8">
+  <Input size="sm" placeholder="Small" />
+  <Input size="md" placeholder="Medium" />
+  <Input size="lg" placeholder="Large" />
+</div>
+
+---
+
+## Prefix and Suffix
+
+<div className="flex items-center gap-8">
+  <Input prefix={<ArrowUp />} placeholder="Placeholder" />
+  <Input suffix={<ArrowUp />} placeholder="Placeholder" />
+  <Input prefix={<ArrowUp />} suffix={<ArrowUp />} placeholder="Placeholder" />
+</div>
+
+---
+
+## Disabled
+
+<div className="flex items-center gap-8">
+  <Input disabled placeholder="Disabled with placeholder" />
+  <Input disabled value="Disabled with value" />
+</div>
+
+---
+
+## Variant
+
+<div className="flex items-center gap-8">
+  <Input placeholder="Default" />
+  <Input variant="error" placeholder="Error" />
+  <Input variant="warning" placeholder="Warning" />
+  <Input variant="success" placeholder="Success" />
+</div>
+
+---
+
+## Error
+
+## Variant
+
+<div className="flex items-center gap-8">
+  <div>
+    <Input
+      placeholder="error@.com"
+      error="A valid email address is required."
+    />
+  </div>
+</div>
