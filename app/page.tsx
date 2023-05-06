@@ -1,5 +1,5 @@
 import { VariantProps } from "class-variance-authority";
-import { Avatar, Badge, Button, ButtonProps } from "@/ui";
+import { Avatar, Badge, Button, Input } from "@/ui";
 
 const Variants = {
   color: ["primary", "secondary", "error", "warning", "alert", "violet"],
@@ -30,6 +30,77 @@ const Arrow = () => {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center gap-12 p-20">
+      <div className="flex items-center gap-8">
+        <Input size="sm" placeholder="Small" />
+        <Input placeholder="Small" />
+        <Input size="lg" placeholder="Small" />
+        <Input placeholder="Small" disabled />
+        <Input value="Disabled with value" disabled />
+      </div>
+
+      <div className="flex items-center gap-8">
+        <Input prefix={<Arrow />} placeholder="Small" />
+        <Input prefix="https://" suffix=".com" placeholder="Small" />
+        <Input placeholder="Small" />
+      </div>
+
+      <div className="flex items-center gap-8 ">
+        <Input
+          prefixStyling={false}
+          suffixStyling={false}
+          prefix={<Arrow />}
+          placeholder="Small"
+        />
+        <Input
+          prefixStyling={false}
+          suffixStyling={false}
+          prefix="https://"
+          suffix=".com"
+          placeholder="Small"
+        />
+        <Input
+          prefixStyling={false}
+          suffixStyling={false}
+          placeholder="Small"
+        />
+      </div>
+
+      <div className="flex items-center gap-8">
+        <Input variant="error" placeholder="Small" />
+        <Input variant="warning" placeholder="Small" />
+        <Input variant="success" placeholder="Small" />
+      </div>
+
+      <div className="flex items-center gap-8">
+        <Input variant="error" placeholder="Small" />
+        <Input variant="warning" placeholder="Small" />
+        <Input variant="success" placeholder="Small" />
+      </div>
+
+      <div className="flex items-center gap-8">
+        <div>
+          <Input
+            variant="error"
+            placeholder="Small"
+            error="A valid email address is required so that we can verify your GitHub installation. In the event that you cannot provide a valid email address, please contact support."
+          />
+        </div>
+        <div>
+          <Input
+            variant="error"
+            placeholder="Small"
+            error="A valid email address is required so that we can verify your GitHub installation. In the event that you cannot provide a valid email address, please contact support."
+          />
+        </div>
+        <div>
+          <Input
+            variant="error"
+            placeholder="Small"
+            error="A valid email address is required so that we can verify your GitHub installation. In the event that you cannot provide a valid email address, please contact support."
+          />
+        </div>
+      </div>
+
       <div className="flex items-center gap-8">
         <Avatar src="https://github.com/martinsione.png" />
         <Avatar
