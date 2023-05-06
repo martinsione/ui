@@ -6,6 +6,8 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       geist: {
+        white: "var(--geist-white)",
+        black: "var(--geist-black)",
         background: "var(--geist-background)",
         foreground: "var(--geist-foreground)",
         accents: {

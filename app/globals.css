@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --geist-white: #fff;
+  --geist-black: #000;
   --geist-background: #ffffff;
   --geist-foreground: #000000;
   --geist-accents-1: #fafafa;

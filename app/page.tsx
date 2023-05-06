@@ -1,10 +1,10 @@
 import { VariantProps } from "class-variance-authority";
-import { Button, ButtonProps } from "@/ui";
+import { Badge, Button, ButtonProps } from "@/ui";
 
 const Variants = {
   color: ["primary", "secondary", "error", "warning", "alert", "violet"],
   shape: ["square", "circle"],
-  size: ["small", "medium", "large"],
+  size: ["sm", "md", "lg"],
   variant: ["ghost", "solid"],
 } as const;
 
@@ -93,6 +93,39 @@ export default function Home() {
         <div className="flex flex-col items-center gap-2">
           <Button loading>Upload</Button>
         </div>
+      </div>
+      <div className="flex max-w-xl flex-wrap gap-x-8 gap-y-4">
+        {(
+          [
+            "amber-subtle",
+            "amber",
+            "blue-subtle",
+            "blue",
+            "gray-contrast",
+            "gray-subtle",
+            "gray",
+            "pink-subtle",
+            "pink",
+            "purple-subtle",
+            "purple",
+            "red-subtle",
+            "red",
+            "trial",
+            "turbo",
+          ] as const
+        ).map((color) => (
+          <Badge key={color} variant={color}>
+            Badge
+          </Badge>
+        ))}
+      </div>
+
+      <div className="flex max-w-xl flex-wrap gap-x-8 gap-y-4 text-sm leading-4">
+        {(["sm", "md", "lg"] as const).map((size) => (
+          <Badge key={size} size={size}>
+            Badge
+          </Badge>
+        ))}
       </div>
     </main>
   );

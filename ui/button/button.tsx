@@ -17,7 +17,7 @@ export interface ButtonProps
 const variants = cva(
   "relative m-0 flex max-w-full cursor-pointer select-none items-center justify-center rounded border px-3 py-0 align-baseline font-medium leading-5 outline-none transition-colors duration-150 ease-in focus:ring-offset-1 focus-visible:ring-2 disabled:cursor-not-allowed  disabled:border-geist-accents-2 disabled:bg-geist-accents-1 disabled:text-geist-accents-3",
   {
-    defaultVariants: { variant: "base", size: "medium", color: "primary" },
+    defaultVariants: { variant: "base", size: "sm", color: "primary" },
     variants: {
       color: {
         primary:
@@ -36,9 +36,9 @@ const variants = cva(
           "border-transparent bg-[linear-gradient(to_right,var(--lighten-color),var(--lighten-color))]",
       },
       size: {
-        small: "h-8 text-sm",
-        medium: "h-10 text-sm",
-        large: "h-12 text-base",
+        sm: "h-8 text-sm",
+        md: "h-10 text-sm",
+        lg: "h-12 text-base",
       },
       shape: {
         circle: "rounded-full",
@@ -119,17 +119,17 @@ const variants = cva(
           "text-geist-violet hover:bg-geist-violet active:bg-geist-violet",
       },
       {
-        size: "small",
+        size: "sm",
         shape: ["circle", "square"],
         className: "w-8 p-0",
       },
       {
-        size: "medium",
+        size: "md",
         shape: ["circle", "square"],
         className: "w-10 p-0",
       },
       {
-        size: "large",
+        size: "lg",
         shape: ["circle", "square"],
         className: "w-12 p-0",
       },
@@ -137,7 +137,7 @@ const variants = cva(
   }
 );
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
     const {
       className,
@@ -162,7 +162,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {(prefix || loading) && (
           <span className="mr-2">
             {loading ? (
-              <Spinner className={size === "large" ? "h-6 w-6" : "h-5 w-5"} />
+              <Spinner className={size === "lg" ? "h-6 w-6" : "h-5 w-5"} />
             ) : (
               prefix
             )}
@@ -177,3 +177,5 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 );
 Button.displayName = "Button";
+
+export { Button };
