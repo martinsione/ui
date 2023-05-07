@@ -14,6 +14,7 @@ const navigation: Navigation = [
       { title: "Avatar", href: "/docs/avatar" },
       { title: "Badge", href: "/docs/badge" },
       { title: "Button", href: "/docs/button" },
+      { title: "Checkbox", href: "/docs/checkbox" },
       { title: "Input", href: "/docs/input" },
     ],
   },
