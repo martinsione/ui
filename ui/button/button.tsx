@@ -62,25 +62,25 @@ const variants = cva(
         variant: "base",
         color: "error",
         className:
-          "border-geist-error bg-geist-error text-geist-background hover:text-geist-error focus-visible:active:text-geist-error",
+          "border-geist-error bg-geist-error text-geist-white hover:text-geist-error focus-visible:active:text-geist-error",
       },
       {
         variant: "base",
         color: "warning",
         className:
-          "border-geist-warning bg-geist-warning text-geist-background hover:text-geist-warning focus-visible:active:text-geist-warning",
+          "border-geist-warning bg-geist-warning text-geist-white hover:text-geist-warning focus-visible:active:text-geist-warning",
       },
       {
         variant: "base",
         color: "alert",
         className:
-          "border-geist-highlight-pink bg-geist-highlight-pink text-geist-background hover:text-geist-highlight-pink focus-visible:active:text-geist-highlight-pink",
+          "border-geist-highlight-pink bg-geist-highlight-pink text-geist-white hover:text-geist-highlight-pink focus-visible:active:text-geist-highlight-pink",
       },
       {
         variant: "base",
         color: "violet",
         className:
-          "border-geist-violet bg-geist-violet text-geist-background hover:text-geist-violet focus-visible:active:text-geist-violet",
+          "border-geist-violet bg-geist-violet text-geist-white hover:text-geist-violet focus-visible:active:text-geist-violet",
       },
       {
         variant: "ghost",

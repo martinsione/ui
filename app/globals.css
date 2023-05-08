@@ -51,14 +51,38 @@
   --geist-highlight-magenta: #eb367f;
   --geist-highlight-pink: #ff0080;
   --geist-highlight-yellow: #fff500;
+
+  :hover {
+    --lighten-color: hsla(0, 0%, 100%, 0.8);
+  }
+  :active {
+    --lighten-color: hsla(0, 0%, 100%, 0.7);
+  }
+  :disabled {
+    --lighten-color: hsla(0, 0%, 100%, 0);
+  }
 }
 
-:hover {
-  --lighten-color: hsla(0, 0%, 100%, 0.8);
-}
-:active {
-  --lighten-color: hsla(0, 0%, 100%, 0.7);
-}
-:disabled {
-  --lighten-color: hsla(0, 0%, 100%, 0);
+.dark:root {
+  --geist-foreground: #ffffff;
+  --geist-background: #000000;
+  --geist-accents-1: #111111;
+  --geist-accents-2: #333333;
+  --geist-accents-3: #444444;
+  --geist-accents-4: #666666;
+  --geist-accents-5: #888888;
+  --geist-accents-6: #999999;
+  --geist-accents-7: #eaeaea;
+  --geist-accents-8: #fafafa;
+
+  --lighten-color: hsla(0, 100%, 0, 1);
+  :hover {
+    --lighten-color: hsla(0, 0%, 100%, 0.75);
+  }
+  :active {
+    --lighten-color: hsla(0, 0%, 100%, 0.8);
+  }
+  :disabled {
+    --lighten-color: hsla(0, 0%, 100%, 0);
+  }
 }

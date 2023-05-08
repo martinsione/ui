@@ -30,7 +30,7 @@ export function Sidebar({ navigation }: { navigation: Navigation }) {
                     className={cn(
                       "block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-6 before:w-1.5 before:-translate-y-1/2 before:rounded-full",
                       link.href === pathname
-                        ? "font-semibold text-geist-accents-8 before:bg-geist-foreground"
+                        ? "font-semibold text-geist-accents-7 before:bg-geist-foreground"
                         : "text-geist-accents-5 hover:text-geist-accents-6 hover:before:block"
                     )}
                   >

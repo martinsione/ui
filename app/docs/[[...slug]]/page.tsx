@@ -38,7 +38,7 @@ export default async function Docs({ params }: PageProps) {
   }
 
   return (
-    <article className="prose max-w-none">
+    <article className="prose max-w-none dark:prose-invert">
       <h1 className="mb-2">{page.title}</h1>
       {page?.description && <p>{page.description}</p>}
       <hr className="my-8" />

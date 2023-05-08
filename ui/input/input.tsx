@@ -29,11 +29,11 @@ const variants = cva(
       color: {
         base: "border-geist-accents-2 bg-geist-background text-geist-foreground placeholder:text-geist-foreground focus-visible:border-geist-accents-5",
         error:
-          "border-geist-error text-geist-error placeholder:text-geist-error",
+          "border-geist-error bg-geist-background text-geist-error placeholder:text-geist-error",
         warning:
-          "border-geist-warning text-geist-warning placeholder:text-geist-warning",
+          "border-geist-warning bg-geist-background text-geist-warning placeholder:text-geist-warning",
         success:
-          "border-geist-success text-geist-success placeholder:text-geist-success",
+          "border-geist-success bg-geist-background text-geist-success placeholder:text-geist-success",
       },
       size: { sm: "", md: "", lg: "" },
       type: { select: "", input: "", textarea: "" },

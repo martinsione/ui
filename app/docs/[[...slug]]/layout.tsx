@@ -1,4 +1,4 @@
-import { type Navigation, Sidebar } from "./components/sidebar";
+import { type Navigation, Sidebar } from "../components/sidebar";
 
 const navigation: Navigation = [
   {
@@ -23,10 +23,15 @@ const navigation: Navigation = [
   },
 ];
 
+import { ThemeToggle } from "../components/theme-toggle";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative mx-auto min-h-screen max-w-7xl px-4 py-16">
-      <aside className="fixed hidden h-[calc(100vh-2rem)] w-[290px] flex-col overflow-y-auto overflow-x-hidden lg:flex">
+      <aside className="fixed hidden h-[calc(100vh-2rem)] w-[240px] flex-col overflow-y-auto overflow-x-hidden lg:flex">
+        <div className="mb-6 flex items-center justify-between">
+          <span className="text-xl font-medium tracking-tighter">Geist UI</span>
+          <ThemeToggle />
+        </div>
         <Sidebar navigation={navigation} />
       </aside>
       <div className="lg:ml-[300px]">{children}</div>
