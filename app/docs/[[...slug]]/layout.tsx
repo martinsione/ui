@@ -1,4 +1,5 @@
-import { type Navigation, Sidebar } from "../components/sidebar";
+import { type Navigation, Sidebar } from "../../components/sidebar";
+import { ThemeToggle } from "../../components/theme-toggle";
 
 const navigation: Navigation = [
   {
@@ -23,7 +24,6 @@ const navigation: Navigation = [
   },
 ];
 
-import { ThemeToggle } from "../components/theme-toggle";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative mx-auto min-h-screen max-w-7xl px-4 py-16">

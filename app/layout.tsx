@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { twMerge as cn } from "tailwind-merge";
-import { themeEffect } from "./docs/components/theme-effect";
+import { themeEffect } from "./components/theme-effect";
 
 const inter = Inter({ subsets: ["latin"] });
 

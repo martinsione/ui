@@ -1,4 +1,4 @@
-export const themeEffect = function () {
+export const themeEffect = () => {
   const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
   const theme = window.localStorage.theme ?? "system";
 

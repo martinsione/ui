@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { twMerge as cn } from "tailwind-merge";
 import { themeEffect } from "./theme-effect";
 
-export function ThemeToggle() {
+export const useTheme = () => {
   const [currentTheme, setCurrentTheme] = useState<string | undefined>(
     undefined
   );
@@ -20,38 +20,44 @@ export function ThemeToggle() {
     }
   }
 
+  return [currentTheme, updateTheme] as const;
+};
+
+export function ThemeToggle() {
+  const [theme, setTheme] = useTheme();
+
   return (
     <div className="flex h-9 w-min items-center rounded-full border border-geist-accents-2 bg-geist-accents-1 p-1">
       <button
         className={cn(
           "flex h-7 w-7 items-center justify-center rounded-full p-1.5",
-          currentTheme === "system"
+          theme === "system"
             ? "bg-geist-accents-2 text-geist-foreground"
             : "text-geist-accents-5 hover:text-geist-foreground"
         )}
-        onClick={() => updateTheme("system")}
+        onClick={() => setTheme("system")}
       >
         <SystemIcon />
       </button>
       <button
         className={cn(
           "flex h-7 w-7 items-center justify-center rounded-full p-1.5",
-          currentTheme === "dark"
+          theme === "dark"
             ? "bg-geist-accents-2 text-geist-foreground"
             : "text-geist-accents-5 hover:text-geist-foreground"
         )}
-        onClick={() => updateTheme("dark")}
+        onClick={() => setTheme("dark")}
       >
         <MoonIcon />
       </button>
       <button
         className={cn(
           "flex h-7 w-7 items-center justify-center rounded-full p-1.5",
-          currentTheme === "light"
+          theme === "light"
             ? "bg-geist-accents-2 text-geist-foreground"
             : "text-geist-accents-5 hover:text-geist-foreground"
         )}
-        onClick={() => updateTheme("light")}
+        onClick={() => setTheme("light")}
       >
         <SunIcon />
       </button>
