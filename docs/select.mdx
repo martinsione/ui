@@ -1,0 +1,33 @@
+---
+title: Select
+description: Display a dropdown list of items.
+---
+
+## Sizes
+
+<div className="flex items-center gap-8">
+  <Select size="sm" placeholder="Small" />
+  <Select
+    size="md"
+    placeholder="Medium"
+    prefix={<ArrowUp className="w-[18px]" />}
+  />
+  <Select size="lg" placeholder="Large" />
+</div>
+
+## With Options
+
+<div className="flex items-center gap-8">
+  <Select size="md" placeholder="Select an option">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+    <option>Option 4</option>
+  </Select>
+</div>
+
+## Disabled
+
+<div className="flex items-center gap-8">
+  <Select size="md" placeholder="Medium" disabled />
+</div>

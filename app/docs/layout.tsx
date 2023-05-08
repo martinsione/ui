@@ -15,7 +15,10 @@ const navigation: Navigation = [
       { title: "Badge", href: "/docs/badge" },
       { title: "Button", href: "/docs/button" },
       { title: "Checkbox", href: "/docs/checkbox" },
+      { title: "Error", href: "/docs/error" },
       { title: "Input", href: "/docs/input" },
+      { title: "Select", href: "/docs/select" },
+      { title: "Textarea", href: "/docs/textarea" },
     ],
   },
 ];

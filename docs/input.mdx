@@ -18,27 +18,27 @@ description: Retrieve text input from a user.
 <div className="flex items-center gap-8">
   <Input prefix={<ArrowUp />} placeholder="Placeholder" />
   <Input suffix={<ArrowUp />} placeholder="Placeholder" />
-  <Input prefix={<ArrowUp />} suffix={<ArrowUp />} placeholder="Placeholder" />
+  <Input prefix="https://" suffix=".com" placeholder="Placeholder" />
 </div>
 
 ---
 
 ## Disabled
 
-<div className="flex items-center gap-8">
+<div className="flex gap-8">
   <Input disabled placeholder="Disabled with placeholder" />
   <Input disabled value="Disabled with value" />
 </div>
 
 ---
 
-## Variant
+## Colors
 
 <div className="flex items-center gap-8">
   <Input placeholder="Default" />
-  <Input variant="error" placeholder="Error" />
-  <Input variant="warning" placeholder="Warning" />
-  <Input variant="success" placeholder="Success" />
+  <Input color="error" placeholder="Error" />
+  <Input color="warning" placeholder="Warning" />
+  <Input color="success" placeholder="Success" />
 </div>
 
 ---

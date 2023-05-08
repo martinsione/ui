@@ -31,7 +31,7 @@ const variants = cva(
         violet: "focus-visible:ring-geist-violet active:bg-geist-accents-2",
       },
       variant: {
-        base: "hover:bg-transparent",
+        base: "hover:bg-transparent focus-visible:active:ring-0",
         ghost:
           "border-transparent bg-[linear-gradient(to_right,var(--lighten-color),var(--lighten-color))]",
       },
@@ -50,37 +50,37 @@ const variants = cva(
         variant: "base",
         color: "primary",
         className:
-          "border-geist-foreground bg-geist-foreground text-geist-background hover:text-geist-foreground",
+          "border-geist-foreground bg-geist-foreground text-geist-background hover:text-geist-foreground focus-visible:active:text-geist-foreground",
       },
       {
         variant: "base",
         color: "secondary",
         className:
-          "border-geist-accents-2 bg-geist-background text-geist-accents-5 hover:border-geist-foreground hover:text-geist-foreground ",
+          "border-geist-accents-2 bg-geist-background text-geist-accents-5 hover:border-geist-foreground hover:text-geist-foreground focus-visible:active:text-geist-accents-5",
       },
       {
         variant: "base",
         color: "error",
         className:
-          "border-geist-error bg-geist-error text-geist-background hover:text-geist-error",
+          "border-geist-error bg-geist-error text-geist-background hover:text-geist-error focus-visible:active:text-geist-error",
       },
       {
         variant: "base",
         color: "warning",
         className:
-          "border-geist-warning bg-geist-warning text-geist-background hover:text-geist-warning",
+          "border-geist-warning bg-geist-warning text-geist-background hover:text-geist-warning focus-visible:active:text-geist-warning",
       },
       {
         variant: "base",
         color: "alert",
         className:
-          "border-geist-highlight-pink bg-geist-highlight-pink text-geist-background hover:text-geist-highlight-pink",
+          "border-geist-highlight-pink bg-geist-highlight-pink text-geist-background hover:text-geist-highlight-pink focus-visible:active:text-geist-highlight-pink",
       },
       {
         variant: "base",
         color: "violet",
         className:
-          "border-geist-violet bg-geist-violet text-geist-background hover:text-geist-violet",
+          "border-geist-violet bg-geist-violet text-geist-background hover:text-geist-violet focus-visible:active:text-geist-violet",
       },
       {
         variant: "ghost",

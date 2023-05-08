@@ -1,0 +1,24 @@
+---
+title: Error
+description: Good error design is clear, useful, and friendly. Designing concise and accurate error messages unblocks users and builds trust by meeting people where they are.
+---
+
+## Sizes
+
+<div className="flex flex-col gap-8">
+  <Error size="sm">This email address is already in use.</Error>
+  <Error>This email address is already in use.</Error>
+  <Error size="lg">This email address is already in use.</Error>
+</div>
+
+---
+
+## Custom Label
+
+<Error label="Email Error">This email address is already in use.</Error>
+
+---
+
+## No Label
+
+<Error label={false}>This email address is already in use. </Error>

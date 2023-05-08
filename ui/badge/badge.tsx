@@ -2,15 +2,15 @@ import { twMerge as cn } from "tailwind-merge";
 import { VariantProps, cva } from "class-variance-authority";
 
 export interface BadgeProps
-  extends React.HTMLAttributes<HTMLSpanElement>,
+  extends Omit<React.HTMLAttributes<HTMLSpanElement>, "color">,
     VariantProps<typeof variants> {}
 
 const variants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-full font-medium capitalize tabular-nums",
   {
-    defaultVariants: { variant: "gray", size: "md" },
+    defaultVariants: { color: "gray", size: "md" },
     variants: {
-      variant: {
+      color: {
         "amber-subtle": "bg-[#fff4d6] text-[#a35200]",
         amber: "bg-[#ffb224] text-geist-black",
         "blue-subtle": "bg-[#ebf5ff] text-[#0068d6]",
@@ -36,9 +36,9 @@ const variants = cva(
   }
 );
 
-function Badge({ className, variant, size, ...props }: BadgeProps) {
+function Badge({ className, color, size, ...props }: BadgeProps) {
   return (
-    <span className={cn(variants({ variant, size }), className)} {...props} />
+    <span className={cn(variants({ color, size }), className)} {...props} />
   );
 }
 
