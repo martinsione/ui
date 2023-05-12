@@ -26,15 +26,15 @@ const navigation: Navigation = [
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative mx-auto min-h-screen max-w-7xl px-4 py-16">
-      <aside className="fixed hidden h-[calc(100vh-2rem)] w-[240px] flex-col overflow-y-auto overflow-x-hidden lg:flex">
-        <div className="mb-6 flex items-center justify-between">
+    <div className="relative mx-auto flex max-w-6xl px-4 lg:px-8">
+      <div className="top-0 hidden h-screen w-[240px] overflow-y-auto overflow-x-hidden py-16 lg:sticky lg:block">
+        <div className="mb-8 flex justify-between">
           <span className="text-xl font-medium tracking-tighter">Geist UI</span>
           <ThemeToggle />
         </div>
         <Sidebar navigation={navigation} />
-      </aside>
-      <div className="lg:ml-[300px]">{children}</div>
+      </div>
+      <div className="flex-auto py-16 lg:pl-12">{children}</div>
     </div>
   );
 }
