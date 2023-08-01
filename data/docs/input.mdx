@@ -1,0 +1,57 @@
+---
+title: Input
+description: Retrieve text input from a user.
+---
+
+## Sizes
+
+<div className="flex items-center gap-8">
+  <Input size="sm" placeholder="Small" />
+  <Input size="md" placeholder="Medium" />
+  <Input size="lg" placeholder="Large" />
+</div>
+
+---
+
+## Prefix and Suffix
+
+<div className="flex items-center gap-8">
+  <Input prefix={<ArrowUp />} placeholder="Placeholder" />
+  <Input suffix={<ArrowUp />} placeholder="Placeholder" />
+  <Input prefix="https://" suffix=".com" placeholder="Placeholder" />
+</div>
+
+---
+
+## Disabled
+
+<div className="flex gap-8">
+  <Input isDisabled placeholder="Disabled with placeholder" />
+  <Input isDisabled value="Disabled with value" />
+</div>
+
+---
+
+## Colors
+
+<div className="flex items-center gap-8">
+  <Input placeholder="Default" />
+  <Input color="error" placeholder="Error" />
+  <Input color="warning" placeholder="Warning" />
+  <Input color="success" placeholder="Success" />
+</div>
+
+---
+
+## Error
+
+## Variant
+
+<div className="flex items-center gap-8">
+  <div>
+    <Input
+      placeholder="error@.com"
+      error="A valid email address is required."
+    />
+  </div>
+</div>

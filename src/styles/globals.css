@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --geist-white: #fff;
+  --geist-black: #000;
+  --geist-background: #ffffff;
+  --geist-foreground: #000000;
+  --geist-accents-1: #fafafa;
+  --geist-accents-2: #eaeaea;
+  --geist-accents-3: #999999;
+  --geist-accents-4: #888888;
+  --geist-accents-5: #666666;
+  --geist-accents-6: #444444;
+  --geist-accents-7: #333333;
+  --geist-accents-8: #111111;
+
+  /* Errors */
+  --geist-error-lighter: #f7d4d6;
+  --geist-error-light: #ff1a1a;
+  --geist-error: #ee0000;
+  --geist-error-dark: #c50000;
+
+  /* Success */
+  --geist-success-lighter: #d3e5ff;
+  --geist-success-light: #3291ff;
+  --geist-success: #0070f3;
+  --geist-success-dark: #0761d1;
+
+  /* Warning */
+  --geist-warning-lighter: #ffefcf;
+  --geist-warning-light: #f7b955;
+  --geist-warning: #f5a623;
+  --geist-warning-dark: #ab570a;
+
+  /* Violet */
+  --geist-violet-lighter: #d8ccf1;
+  --geist-violet-light: #8a63d2;
+  --geist-violet: #7928ca;
+  --geist-violet-dark: #4c2889;
+
+  /* Cyan */
+  --geist-cyan-lighter: #aaffec;
+  --geist-cyan-light: #79ffe1;
+  --geist-cyan: #50e3c2;
+  --geist-cyan-dark: #29bc9b;
+
+  /* Highlight */
+  --geist-highlight-purple: #f81ce5;
+  --geist-highlight-magenta: #eb367f;
+  --geist-highlight-pink: #ff0080;
+  --geist-highlight-yellow: #fff500;
+
+  --lighten-color: hsla(0, 100%, 0, 1);
+  /* :hover {
+    --lighten-color: hsla(0, 0%, 100%, 0.8);
+  }
+  :active {
+    --lighten-color: hsla(0, 0%, 100%, 0.7);
+  }
+  :disabled {
+    --lighten-color: hsla(0, 0%, 100%, 0);
+  } */
+}
+
+.dark {
+  --geist-foreground: #ffffff;
+  --geist-background: #000000;
+  --geist-accents-1: #111111;
+  --geist-accents-2: #333333;
+  --geist-accents-3: #444444;
+  --geist-accents-4: #666666;
+  --geist-accents-5: #888888;
+  --geist-accents-6: #999999;
+  --geist-accents-7: #eaeaea;
+  --geist-accents-8: #fafafa;
+
+  --lighten-color: hsla(0, 0%, 100%, 0);
+  /* :hover { */
+  /*   --lighten-color: hsla(0, 0%, 100%, 0.75); */
+  /* } */
+  /* :active { */
+  /*   --lighten-color: hsla(0, 0%, 100%, 0.8); */
+  /* } */
+  /* :disabled { */
+  /*   --lighten-color: hsla(0, 0%, 100%, 0); */
+  /* } */
+}
