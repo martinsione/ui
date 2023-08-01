@@ -11,7 +11,6 @@ import {
   //
   ComboBox as ComboBoxPrimitive,
   Input as InputPrimitive,
-  SearchField as SearchFieldPrimitive,
 } from "react-aria-components";
 import { type VariantProps, cn } from "@/lib";
 import { ChevronDown } from "@/ui/icons";

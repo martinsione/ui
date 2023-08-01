@@ -65,7 +65,7 @@ export function ThemeToggle() {
   );
 }
 
-function SystemIcon(props: any) {
+function SystemIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       fill="none"
@@ -85,7 +85,7 @@ function SystemIcon(props: any) {
   );
 }
 
-function MoonIcon(props: any) {
+function MoonIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       height="24"
@@ -104,7 +104,7 @@ function MoonIcon(props: any) {
   );
 }
 
-function SunIcon(props: any) {
+function SunIcon(props: React.ComponentProps<"svg">) {
   return (
     <svg
       height="24"

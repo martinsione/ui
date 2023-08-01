@@ -23,6 +23,7 @@ export function Mdx({ code }: MdxProps) {
           Input,
           Select,
           SelectItem,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } as any
       }
     />

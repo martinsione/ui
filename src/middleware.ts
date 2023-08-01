@@ -1,4 +1,4 @@
-import { NextRequest, NextFetchEvent, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export const config = {
   matcher: [
@@ -14,7 +14,7 @@ export const config = {
   ],
 };
 
-export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
+export default async function middleware(req: NextRequest) {
   const url = req.nextUrl;
   const path = url.pathname;
 
